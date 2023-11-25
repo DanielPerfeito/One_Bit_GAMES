@@ -99,24 +99,31 @@ font-size: 1.2rem;
 }
 
 /*Section -box2*/
-.box2{;
+.box2{
     grid-area: box2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 
     gap: 15px;}
 
 .content-games{
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
 
+
+.miniatura{
+    width: 100%;
+    height: 100%;
+}
+
 .card-game{
     max-width: 350px;
     min-width: 250px ;
-    min-height: 350px;
+    min-height: 400px;
     flex-grow: 1;
     border:solid 2px var(--cor-escura);
     border-radius: 15px;
@@ -150,9 +157,16 @@ font-size: 1.2rem;
     grid-area: box3;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: center;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: space;
     align-items: center;
+}
+
+.box3 > h2{
+    font-family: var(--fonte-titulos);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
 }
 
 .card-game-extra{
@@ -160,15 +174,20 @@ font-size: 1.2rem;
     border: solid 2px;
     width: 350px;
     min-height: 200px;
-    flex: 1 150px;}
+}
+
+.card-game-extra > h2{
+    text-align: center;
+    }
 
 
 .container-min-extra{
     background-color: aquamarine;
     width: 100%;
-    height: 80%;
-
+    max-height: 400px;
+    min-height: 250px;
 }
+
 
 
 /*Footer*/
